@@ -41,21 +41,20 @@
     </extension>
   </addon>
 
-  <addon id="repository.gujal" name="Gujal Addons Repository" version="2.0.3" provider-name="gujal">
-    <extension point="xbmc.addon.repository" name="Gujal Addons Repository">
-      <dir>
-          <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
-          <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
-          <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
-      </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-      <summary>Third party Addons for Kodi</summary>
-      <description>Gujal Addons Repository</description>
-      <platform>all</platform>
-      <assets>
-        <icon>icon.png</icon>
-      </assets>
-    </extension>
-  </addon>
+<addon id="script.module.resolveurl"
+       name="ResolveURL"
+       version="5.1.189"
+       provider-name="ResolveURL Team">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.module" library="lib"/>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Resolve URL dependency</summary>
+    <description lang="en_GB">ResolveURL is a dependency module used by video add-ons.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
 </addons>
